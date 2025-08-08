@@ -3,7 +3,9 @@ package com.service;
 import com.dto.RouteResponse;
 import com.dto.SafetyScoreResponse;
 import com.dto.SearchResponse;
-import com.dto.Location; // 변경된 부분
+import com.dto.Location; 
+import com.repository.RouteRepository; // 추가된 부분
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Arrays;
@@ -11,6 +13,11 @@ import java.util.List;
 
 @Service
 public class RouteService {
+
+    
+    @Autowired
+    private RouteRepository routeRepository; // 추가된 부분
+
 
     /**
      * 출발지, 도착지 좌표를 기반으로 안전 경로를 찾는 로직을 구현합니다.
