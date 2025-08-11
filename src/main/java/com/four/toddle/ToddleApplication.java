@@ -1,13 +1,13 @@
-package com.toddle.app;
+package com.four.toddle;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class AppApplication {
+public class ToddleApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(AppApplication.class, args);
+		SpringApplication.run(ToddleApplication.class, args);
 	}
 
 }
